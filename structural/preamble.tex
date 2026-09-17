@@ -1,0 +1,96 @@
+
+\usepackage[authoryear, round]{natbib}
+\usepackage{styles/utformat}  		% Package style file for UT ETDs.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Optional packages used for this template. If you don't
+% need a capability in your document, feel free to comment out/remove
+% the package usage command.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{pdflscape}
+% \usepackage{layout}
+\usepackage{graphicx}
+\usepackage{amsmath,amsthm,amsfonts,amscd}
+				% Some packages to write mathematics.
+\usepackage{eucal} 	 	% Euler fonts
+\usepackage{verbatim}      	% Allows quoting source with commands.
+\usepackage{styles/citesort}         	%
+\usepackage{algorithm}
+\usepackage{bibentry}
+\usepackage{algorithmic}
+\usepackage{xcolor}
+\usepackage{markdown}
+\usepackage{booktabs}
+\usepackage{url}
+
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{tabularx}
+\usepackage{bbm}% Allows good typesetting of web URLs.
+\usepackage{mathtools}
+\usepackage{hyperref}
+\hypersetup{colorlinks=false}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Default is one-and-a-half spacing. Double is also permitted.%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\oneandonehalfspacing
+% \doublespacing
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Some math support.					     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%	Theorem environments (these need the amsthm package)
+%
+%% \theoremstyle{plain} %% This is the default
+
+\newtheorem{thm}{Theorem}[chapter]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{ax}{Axiom}
+
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}[chapter]
+
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}[chapter]
+\newtheorem*{notation}{Notation}
+
+%\numberwithin{equation}{section}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Macros.							     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%	Here some macros that are needed in this document:
+
+
+\newcommand{\latexe}{{\LaTeX\kern.125em2%
+                      \lower.5ex\hbox{$\varepsilon$}}}
+
+\newcommand{\amslatex}{\AmS-\LaTeX{}}
+
+\chardef\bslash=`\\	% \bslash makes a backslash (in tt fonts)
+			%	p. 424, TeXbook
+
+\newcommand{\cn}[1]{\texttt{\bslash #1}}
+
+\makeatletter		% Starts section where @ is considered a letter
+			% and thus may be used in commands.
+\def\square{\RIfM@\bgroup\else$\bgroup\aftergroup$\fi
+  \vcenter{\hrule\hbox{\vrule\@height.6em\kern.6em\vrule}%
+                                              \hrule}\egroup}
+\makeatother		% Ends sections where @ is considered a letter.
+			% Now @ cannot be used in commands.
+
+\nobibliography*
+
+
+% These values determine the numbering within the text and Table of Contents.
+\setcounter{secnumdepth}{3}    % Number subsections in the chapters.
+\setcounter{tocdepth}{2} % include subsections in the Table of Contents

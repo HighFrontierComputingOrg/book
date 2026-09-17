@@ -1,0 +1,67 @@
+\chapter[Main Text Short Title]{Main Text Longer Title\footnote{Including a footnote.}}
+\label{main}
+\chapterabstract{
+If your chapter requires an abstract, use this command, NOT \texttt{abstract}.
+}
+Main text. In-text citation \citet{knuth:tb} or parenthetical citation \citep{knuth:tb}.
+
+\section{Section Title}
+Figures can be included as in Figure \ref{fig:example}. Additional figures will be numbered as Figure \ref{fig:example2}.
+\begin{figure}[h]
+    \centering
+    \includegraphics{example-image-a}
+    \caption{Example image}
+    \label{fig:example}
+\end{figure}
+\begin{figure}[ht]
+    \centering
+    \includegraphics{example-image-a}
+    \caption{Example image}
+    \label{fig:example2}
+\end{figure}
+
+Tables can be included as in Table \ref{tab:example}.
+\begin{table}[t]
+    \centering
+    \begin{tabular}{c|c}
+         a & b \\
+         c & d
+    \end{tabular}
+    \caption[Short example table title]{Longer explanation of the 2x2 table shown above.}
+    \label{tab:example}
+\end{table}
+
+Illustrations can be included as in Illustration \ref{illustration:example}.
+\begin{illustration}[H]
+    \centering
+    \includegraphics{example-image-b}
+    \caption[Short example illustration title]{Longer explanation of the illustration shown above.}
+    \label{illustration:example}
+\end{illustration}
+
+Maps can be included as in Map \ref{map:example}.
+\begin{map}[H]
+    \centering
+    \includegraphics{example-image-c}
+    \caption[Short example map title]{Longer explanation of the map shown above.}
+    \label{map:example}
+\end{map}
+
+Slides can be included as in Slide \ref{slide:example}.
+\begin{slide}[H]
+    \centering
+    \includegraphics{example-image-a}
+    \caption[Short example slide title]{Longer explanation of the slide shown above.}
+    \label{slide:example}
+\end{slide}
+
+Block quotes can be included as well, using the \verb|quotation| package, as can be seen in the following quotation.
+\begin{quotation}
+The core values of The University of Texas at Austin are learning, discovery, freedom, leadership, individual opportunity, and responsibility. Each member of the university is expected to uphold these values through integrity, honesty, trust, fairness, and respect toward peers and community.
+\end{quotation}
+
+Theorems can be added as Theorem \ref{thm:example}, along with definitions, lemmas, etc.
+\begin{thm}
+\label{thm:example}
+Theorem here.
+\end{thm}

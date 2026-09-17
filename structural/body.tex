@@ -1,0 +1,115 @@
+% This is the body of your document. You may copy-paste it into your main document
+% (dissertation.tex, masterreport.tex, masterthesis.tex, treatise.tex), or edit it here.
+
+
+\copyrightpage  % Produces the copyright page. Optional.
+
+\commcertpage   % Produces the Committee Certification
+			%   of Approved Version page (doctoral)
+			%   or Signature page (masters).
+			%		20 Mar 2002	cwm
+                % Required.
+
+\titlepage      % Produces the title page. Required.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dedication and/or epigraph are optional, but must occur here.      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{dedication}		% Optional
+To all future Longhorn graduate students.
+\end{dedication}
+
+\begin{epigraph}		% Optional
+\begin{center}
+    \textit{What starts here changes the world.}
+    \\\hspace{4em}---University of Texas at Austin
+\end{center}
+\end{epigraph}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Acknowledgements and/or preface are optional, but must occur here. %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{acknowledgments}		% Optional
+Thanks to the previous authors of this template, and to the Graduate School for providing it.
+\end{acknowledgments}
+
+\begin{preface}		% Optional
+Readers, this document represents a great deal of time and effort. Enjoy. Cheers, \theauthor.
+\end{preface}
+
+% The abstract is required. Note the use of ``utabstract'' instead of
+% ``abstract''! This was necessary to fix a page numbering problem.
+% The abstract heading is generated automatically.
+% Do NOT use \begin{abstract} ... \end{abstract}.
+%
+\utabstract
+\input{chapters/abstract}    % this includes the text from `abstract.tex`
+
+\tableofcontents   % Table of Contents will be automatically
+                   % generated and placed here. Required.
+
+\listoftables      % Optional.
+\listoffigures     % Optional.
+\listofillustrations     % Optional.
+\listofmaps      % Optional.
+\listofslides    % Optional.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Actual text starts here.					     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Including external files for each chapter makes this document simpler,
+% makes each chapter simpler, and allows for generating test documents
+% with as few as zero chapters (by commenting out the include statements).
+% Can even change the chapter order by merely interchanging the order
+% of the include statements (something past contributors found helpful in their own
+% dissertations =) ).
+%
+
+\include{chapters/introduction}
+
+\include{chapters/main}
+
+
+
+% NOTE: If you have only one appendix, use the command \appendix instead
+% of \appendices.
+%
+% \appendix
+\appendices
+
+\include{chapters/appendix}
+
+%%%%%%%%%%%%%%%%%%%%%
+% Optional glossary. May also be moved between the Table of Contents and the Text.
+%%%%%%%%%%%%%%%%%%%%%
+\begin{glossary}
+\begin{description}
+    \item[\theauthor] A hard-working graduate student, nearing the end of this chapter of your education!
+    \item[\thedegree] \theauthor\ is about to earn this. Congratulations!
+\end{description}
+\end{glossary}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Generate the bibliography.					     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \nocite{*}    % This command causes all items in the 		     %
+                % bibliographic database to be added to 	     %
+                % the bibliography, even if they are not 	     %
+                % explicitly cited in the text. 		     %
+\bibliographystyle{plainnat}  % Here the bibliography 		     %
+\bibliography{references}        % is inserted.			     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Vita page.							     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{vita}
+
+\theauthor\ is going to graduate soon!
+\end{vita}

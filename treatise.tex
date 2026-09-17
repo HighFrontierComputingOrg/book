@@ -1,0 +1,38 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  treatise.tex, to be compiled with pdfLaTeX.		     %
+%%  19 January 2023	Version 5				     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Writing a Doctoral Treatise with LaTeX at		     %
+%%	the University of Texas at Austin			     %
+%%  (Modify this template for your own treatise.)	     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[letterpaper,12pt]{report}	% The documentclass must be ``report''.
+
+% Includes the utformat.sty file, but also additional packages and some commands.
+% See `structural/preamble.tex`.
+\input{structural/preamble}  
+
+% Important! Need to update the information in `structural/about.tex`!
+\input{structural/about} 
+
+% Please update your degree and degree abbreviation here, if needed.
+\degree{Doctor of Philosophy}
+\degreeabbr{PhD} 
+% See the Catalog for the current list.
+% catalog.utexas.edu/graduate/graduate-study/graduate-degrees/
+
+% Uncomment ONLY the line below that corresponds to the type of document you are writing.
+%
+% \masterthesis
+% \masterreport
+% \dissertation  % the default if none of the options are set
+\treatise
+
+
+\begin{document}
+
+% See `structural/body.tex` for updating/adding/removing content.
+\input{structural/body}
+
+\end{document}

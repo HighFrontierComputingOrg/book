@@ -1,0 +1,39 @@
+\chapter{Introduction}
+\emph{Please be sure to refer to the Graduate School's format guidelines as they may have changed. This template was last updated April 2023.}
+
+As of this writing (April 2023) there are several required sections for ETDs, with several optional sections. All required sections and optional sections are supported by this template. To make changes to most formatting options, you will need to update \verb|styles/utformat.sty|. Some aspects of the formatting depend on which kind of document you are producing (dissertation, report, thesis, treatise), so be sure to update the appropriate section if relevant.
+
+\section{Important Note}
+Please be sure you have selected the appropriate type of document by using the \verb|\dissertation|, \verb|\mastersthesis|, \verb|\mastersreport|, or \verb|\treatise| commands in your main \verb|.tex| file (these are correct in the provided template for each main document option). Be sure to update the definitions for \verb|\degree| and \verb|\degreeabbr| in your main \verb|.tex| file if appropriate.
+
+\section{Status of this Template}
+Below you will find some information on the current status of this template.
+\subsection{Limitations}
+If you have one appendix, use command \verb|\appendix| in \verb|structural/body.tex|. If you have more than one appendix, use command \verb|\appendices| instead.
+
+Currently, this template does not support dual degrees. In this case, you may find it easiest to edit the definition of \verb|\titlepage| in \verb|styles/utformat.sty| to say ``Degrees'' rather than ``Degree.'' It will be easiest to replace the line that includes \verb|\d@gree| and add additional lines for each degree. See the Graduate School's formatting document for more information on what the title page should look like for dual degrees.
+
+This template will automatically set the graduation month and year based on when you compile it. If needed, this can be changed at \verb|\graduation@month| in \verb|styles/utformat.sty|.
+
+\subsection{Formatting Choices}
+While the current Graduate School formatting requirements are quite flexible, several choices have been made in the development of this template and are detailed below:
+\begin{itemize}
+    \item The bibliography section has been titled ``Works Cited.'' To change this, update the definition of \verb|thebibliography| in \verb|styles/utformat.sty|.
+    \item Figures, tables, etc. are double-numbered, meaning that they reflect the chapter (e.g., Figure 2.1 is the first figure in Chapter 2). To change this, use \verb|\counterwithout{figure}{chapter}| and similar commands -- see the commented section near the top of \verb|styles/utformat.tex|.
+    \item The Table of Contents will include chapters, sections and subsections (not sub-subsections). To change this, you will need to update \verb|tocdepth|. This is set in \verb|structural/preamble.tex|.
+    \item Within chapters, sub-subsections will be numbered (e.g., \S1.2.3.4). To change this, update \verb|secnumdepth|. This is set in \verb|structural/preamble.tex|.
+    \item See \S\ref{main} for examples of how citations are currently formatted. This template uses the \verb|natbib| package for citations, which can be customized.
+    \item Text is 1.5-spaced. To change, instead of \verb|\oneandonehalfspacing|, you may use \verb|\doublespacing| in \verb|structural/preamble.tex|.
+    \item Block quotes are single-spaced. To change, instead of \verb|\singlespacequote|, use \verb|\doublespacequote| in \verb|styles/utformat.sty|.
+    \item Numbering for theorems and similar environments is set at the chapter leve, but can be set in \verb|structural/preamble.tex|.
+\end{itemize}
+
+
+\section{Example Section Name}
+Example section text.
+
+\subsection{Example Subsection}
+Example subsection text.
+
+\subsubsection{Example Subsubsection}
+Example sub-subsection text.
